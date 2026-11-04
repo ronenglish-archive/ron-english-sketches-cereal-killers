@@ -1,0 +1,55 @@
+/* Cap'n Cornstarch V7 - complete replacement of obsolete page CSS in PREVIEW COPIES.
+   Approved drawing detail geometry and semantic documentary families.
+   No priority overrides, CSS zoom, stacked styles or layout-fixing JavaScript. */
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0 auto;padding:6px 9px 10px;width:100%;max-width:590px;min-width:0;background:#fff;color:#111;font:13px/1.4 system-ui,-apple-system,"Segoe UI",sans-serif;text-align:center;overflow-wrap:anywhere}
+body>main,body>.wrapper,body>.container,main,.wrapper,.container{width:100%;max-width:540px;margin-inline:auto;min-width:0}
+h1{font-size:clamp(23px,4vw,27px);font-weight:700;line-height:1.2;margin:10px auto 12px;text-align:center}
+h2{font-size:16px;font-weight:700;line-height:1.3;margin:0 auto 10px;text-align:center}
+h3{font-size:14px;line-height:1.3}
+p{margin:7px auto;line-height:1.4}
+.section-card,section[data-role]{width:100%;max-width:540px;margin:0 auto 12px;padding:12px 11px;background:#fff;border:1px solid #e2e5e9;border-radius:9px;box-shadow:0 2px 9px #00000009;min-height:0;height:auto;text-align:center}
+.section-card:empty{display:none}
+.gallery-grid,.ron-doc-category-items{display:flex;flex-wrap:wrap;gap:12px;align-items:stretch;justify-content:center;max-width:100%;margin:0 auto}
+.gallery-item{min-width:0;color:inherit;text-decoration:none}
+.gallery-item img,.ron-doc-category-item img{display:block;width:auto;height:auto;max-width:100%;object-fit:contain;margin:auto}
+section[data-role="original-drawing"]{padding:11px 10px;margin:0 auto 12px}
+section[data-role="original-drawing"] .original-grid,section[data-role="original-drawing"] .gallery-grid{display:flex;justify-content:center;align-items:center;gap:10px}
+section[data-role="original-drawing"] .gallery-item{display:flex;align-items:center;justify-content:center;flex:0 1 auto;width:auto;max-width:100%;padding:10px;background:#fff;border:1px solid #dadde2;border-radius:6px}
+section[data-role="original-drawing"] img{display:block;width:auto;height:auto;max-width:100%;max-height:390px;object-fit:contain}
+/* Digitized Versions and Cards: distinct 190px contained documentary cards. */
+section[data-role="digital"] .gallery-grid>.gallery-item,section[data-role="cards"] .gallery-grid>.gallery-item,
+section[data-role="delusionville-trading-cards"] .gallery-grid>.gallery-item,
+section[data-role="delusionville-cards"] .gallery-grid>.gallery-item{
+  display:flex;flex:0 0 190px;width:190px;max-width:190px;min-width:0;flex-direction:column;align-items:center;justify-content:flex-start;
+  border:1px solid #e2e5e9;border-radius:8px;padding:9px 8px;background:#fff;overflow-wrap:anywhere;text-decoration:none}
+section[data-role="digital"] .gallery-item img,section[data-role="cards"] .gallery-item img,
+section[data-role="delusionville-trading-cards"] .gallery-item img,
+section[data-role="delusionville-cards"] .gallery-item img{max-height:158px;object-fit:contain}
+/* Ron English graphic-design documentation: one complete figure/card per item. */
+section[data-role="ancillary-documentation"] .ron-doc-category-items{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}
+section[data-role="ancillary-documentation"] .ron-doc-category-item{display:flex;flex:0 0 190px;width:190px;max-width:190px;min-width:0;flex-direction:column;align-items:center;justify-content:flex-start;margin:0;padding:9px 8px;border:1px solid #e2e5e9;border-radius:8px;background:#fff}
+section[data-role="ancillary-documentation"] .ron-doc-category-item img{max-height:158px;max-width:100%;object-fit:contain}
+section[data-role="ancillary-documentation"] figcaption,section[data-role="digital"] .gallery-item p,
+section[data-role="cards"] .gallery-item p{font-size:12px;line-height:1.3;margin:6px auto 0}
+section[data-role="literature"] .literature-entry{margin:10px auto 14px;text-align:center}
+section[data-role="literature"] .literature-entry .gallery-grid{justify-content:center}
+section[data-role="notes"] .notes-text{max-width:100%;margin:0 auto;text-align:center}
+/* Verified factual metadata lists are tagged during the V7 source transformation.
+   No guessed metadata selectors, no bullets, no collateral effects on literature. */
+.capn-metadata-rows{display:block;width:100%;max-width:540px;margin:10px auto 12px;padding:0;list-style:none;text-align:center;line-height:1.5}
+.capn-metadata-rows>li{display:block;margin:3px auto;padding:0;list-style:none;text-align:center}
+.capn-metadata-rows>li::marker{content:""}
+.metadata,.artwork-metadata,.metadata-block,[data-role="metadata"]{max-width:540px;width:100%;margin:10px auto 12px;padding:0;line-height:1.5;text-align:center}
+.relationship-note{max-width:540px;margin:8px auto 12px;padding:10px 12px;background:#f5f5f5;border:1px solid #d6d6d6;border-radius:8px;color:#555;text-align:center}
+/* New navigation is part of the rebuilt document, not a patch over old navigation. */
+.capn-nav{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:5px;margin:10px auto;width:100%;max-width:560px}
+.capn-nav a{display:inline-flex;align-items:center;justify-content:center;padding:5px 8px;border:1px solid #111;border-radius:999px;background:#fff;color:#111;font-size:11px;font-weight:700;line-height:1.3;text-decoration:none;text-align:center}
+.capn-nav a:hover,.capn-nav a:focus-visible,.capn-close a:hover,.capn-close a:focus-visible{background:#f3f4f6}
+a:focus-visible{outline:2px solid #111;outline-offset:2px}
+.capn-close{display:flex;justify-content:flex-end;max-width:560px;margin:0 auto 3px}
+.capn-close a{display:inline-flex;width:24px;height:24px;align-items:center;justify-content:center;border:1px solid #111;border-radius:50%;color:#111;text-decoration:none;font-size:18px;font-weight:700;line-height:1}
+.capn-member-sequence{margin:16px auto 8px}
+.capn-footer{margin:8px auto 0;padding:8px 0 0;max-width:560px;border-top:1px solid #e1e4e8;color:#666;font-size:10px;line-height:1.4;text-align:center}
+@media(max-width:420px){body{padding:6px 7px 10px}.section-card,section[data-role]{padding:10px 8px}.capn-nav a{font-size:11px;padding:7px 8px}}
