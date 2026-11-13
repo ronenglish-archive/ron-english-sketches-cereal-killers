@@ -1,48 +1,60 @@
 <!DOCTYPE html>
+
 <html lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <title>Poo Fairy Front | Ron English Catalogue Raisonné</title>
 <link href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/favicon.png" rel="icon" type="image/png"/>
-<style>/* Single authoritative Sketches & Drawings detail-page stylesheet. */
-:root{--border:#e1e3e6;--ink:#222;--link:#164f9e}
-*{box-sizing:border-box}
-html,body{margin:0;background:#fff;color:var(--ink)}
-body{font:400 14px/1.6 system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
-a{color:var(--link);text-decoration:underline}
-a:focus-visible{outline:3px solid #2463bc;outline-offset:3px}
-img{display:block;max-width:100%;height:auto;object-fit:contain}
-main.wrap{width:100%;max-width:620px;margin:0 auto;padding:16px 14px 26px}
-.page-header{text-align:center}
-.page-title{margin:12px auto 16px;text-align:center;font:400 28px/1.2 Georgia,serif;overflow-wrap:anywhere}
-.nav-pills,.sequence-nav{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:9px;margin:8px auto 14px;text-align:center}
-.nav-pill{display:inline-block;padding:6px 11px;border:1px solid #e5e7eb;border-radius:999px;color:#333;text-decoration:none;font-size:12px}
-.section-card{width:100%;max-width:560px;margin:0 auto 18px;padding:19px 16px;background:#fff;border:1px solid var(--border);border-radius:12px;box-shadow:none}
-h2,.original-drawing-heading{font:400 20px/1.3 Georgia,serif;text-align:center;margin:0 0 14px}
-.original-drawing-heading{margin:18px auto 14px}
-.gallery-grid,.ron-doc-category-items{display:flex;flex-wrap:wrap;justify-content:center;align-items:flex-start;gap:12px}
-.gallery-item,.ron-doc-category-item>a{display:flex;align-items:center;justify-content:center;overflow:hidden;background:#fff;border:1px solid var(--border);border-radius:10px;padding:6px;text-decoration:none}
-.gallery-item img,.ron-doc-category-item img{display:block;max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain}
-/* Original Drawing has an outer panel, but no tight border around the image. */
-[data-role="original-drawing"] .gallery-item{width:100%;max-width:410px;padding:0;border:0;border-radius:0;background:transparent;overflow:visible}
-[data-role="original-drawing"] .gallery-item img{max-height:380px;margin:0 auto}
-.catalogue-meta-block{max-width:560px;margin:0 auto 18px;text-align:center}
-.work-meta{margin:0;padding:0;list-style:none;text-align:center}
-.work-meta p{margin:3px 0}
-[data-role="work-in-progress"] .gallery-item{width:130px;max-width:130px;min-height:0}
-[data-role="work-in-progress"] .gallery-item img{max-height:170px}
-/* Graphic designs: flexible natural aspect ratio, bounded by 200 x 200px. */
-[data-category="artist-created-graphic-designs"] .ron-doc-category-item{display:flex;justify-content:center;align-items:center;max-width:200px;margin:0}
-[data-category="artist-created-graphic-designs"] .ron-doc-category-item>a{width:auto;max-width:200px;height:auto;max-height:200px;min-width:0;min-height:0}
-[data-category="artist-created-graphic-designs"] .ron-doc-category-item img{width:auto;height:auto;max-width:186px;max-height:186px;object-fit:contain}
-[data-category="artist-created-graphic-designs"] .ron-doc-category-item figcaption{display:none}
-[data-role="notes"] .text-block,[data-role="notes"] p{text-align:center}
-.section-card p{margin:0 0 8px}
-.section-card p:last-child{margin-bottom:0}
-.footer-divider{max-width:560px;border:0;border-top:1px solid #d8dadd;margin:18px auto 16px}
-footer{text-align:center;margin:0 auto 16px;font-size:14px;color:#666}
-@media(max-width:440px){main.wrap{padding:12px 10px 22px}.section-card{padding:19px 12px}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+<style>/* Ron English Sketches & Drawings — November 13 clean detail-page presentation. */
+:root { --border:#e1e3e6; --ink:#222; }
+* { box-sizing:border-box; }
+html,body { margin:0; background:#fff; color:var(--ink); }
+body { font:400 14px/1.6 system-ui,-apple-system,"Segoe UI",Arial,sans-serif; }
+a { color:#164f9e; text-decoration:underline; }
+a:focus-visible { outline:3px solid #2463bc; outline-offset:3px; }
+img { display:block; max-width:100%; height:auto; object-fit:contain; }
+.wrap { width:100%; max-width:620px; margin:0 auto; padding:16px 14px 26px; }
+.page-header { text-align:center; }
+.page-title { margin:12px auto 16px; text-align:center; overflow-wrap:anywhere; font:400 28px/1.2 Georgia,serif; }
+.nav-pills,.sequence-nav { display:flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:9px; margin:8px auto 14px; text-align:center; }
+.nav-pill { display:inline-block; padding:6px 11px; border:1px solid #e5e7eb; border-radius:999px; color:#333; text-decoration:none; font-size:12px; }
+.section-card { width:100%; max-width:560px; margin:0 auto 18px; padding:19px 16px; background:#fff; border:1px solid var(--border); border-radius:12px; box-shadow:none; }
+.original-drawing-heading,.section-card h2 { text-align:center; font:400 20px/1.3 Georgia,serif; margin:0 0 14px; }
+.original-drawing-heading { margin:18px 0 14px; }
+.section-card p { margin:0 0 8px; }
+.section-card p:last-child { margin-bottom:0; }
+.gallery-grid,.ron-doc-category-items,.ron-yt-clean-grid { display:flex; flex-wrap:wrap; justify-content:center; align-items:flex-start; gap:12px; }
+.gallery-item { display:flex; align-items:center; justify-content:center; max-width:100%; padding:6px; border:1px solid var(--border); border-radius:10px; background:#fff; text-decoration:none; }
+.gallery-item img { object-fit:contain; }
+.section-card[data-role="original-drawing"] .gallery-item { width:100%; max-width:410px; padding:0; border:0; border-radius:0; background:transparent; }
+.section-card[data-role="original-drawing"] img { width:auto; max-height:380px; }
+.section-card[data-role="original-drawing"] .text-block { text-align:center; }
+.catalogue-meta-block { max-width:560px; margin:0 auto 18px; text-align:center; }
+.work-meta { margin:0; text-align:center; }
+.work-meta p { margin:3px 0; }
+.section-card[data-role="digital"] .gallery-item,.section-card[data-role="photo-gallery"] .gallery-item,.section-card[data-role="artist-colored-copy"] .gallery-item { width:200px; height:200px; flex:0 0 200px; }
+.section-card[data-role="digital"] .gallery-item img,.section-card[data-role="photo-gallery"] .gallery-item img,.section-card[data-role="artist-colored-copy"] .gallery-item img { width:100%; height:100%; object-fit:contain; }
+.section-card[data-role="cards"] .gallery-item,.section-card[data-role="area54-cards"] .gallery-item,.section-card[data-role="delusionville-trading-cards"] .gallery-item,.section-card[data-role="work-in-progress"] .gallery-item,.ron-unified-notes-wip-panel[data-role="work-in-progress"] .gallery-item { width:130px; height:170px; flex:0 0 130px; }
+.section-card[data-role="cards"] .gallery-item img,.section-card[data-role="area54-cards"] .gallery-item img,.section-card[data-role="delusionville-trading-cards"] .gallery-item img,.section-card[data-role="work-in-progress"] .gallery-item img { max-width:100%; max-height:100%; object-fit:contain; }
+.section-card[data-category="artist-created-graphic-designs"] .ron-doc-category-item { display:flex; align-items:center; justify-content:center; max-width:200px; margin:0; }
+.section-card[data-category="artist-created-graphic-designs"] .gallery-item { width:auto; height:auto; max-width:200px; max-height:200px; padding:6px; }
+.section-card[data-category="artist-created-graphic-designs"] .gallery-item img { width:auto; height:auto; max-width:186px; max-height:186px; }
+.section-card[data-role="literature"] .literature-entry { text-align:center; margin:0 auto 12px; max-width:520px; }
+.section-card[data-role="literature"] .gallery-grid { margin-bottom:18px; }
+.section-card[data-role="literature"] .gallery-item { width:auto; max-width:155px; height:auto; }
+.section-card[data-role="literature"] .gallery-item img { width:auto; height:auto; max-height:155px; }
+.section-card[data-role="notes"],.section-card[data-role="notes"] .text-block { text-align:center; }
+.shared-original-sheet { background:#f3f4f5; text-align:center; }
+.shared-original-sheet p { margin:0; }
+.ron-yt-clean-tile { width:200px; max-width:100%; margin:0; }
+.ron-video-poster { position:relative; display:block; width:100%; max-width:200px; padding:6px; border:1px solid var(--border); border-radius:10px; background:#fff; text-decoration:none; overflow:hidden; }
+.ron-video-poster img { display:block; width:100%; height:auto; max-height:200px; object-fit:contain; }
+.ron-video-poster span[aria-hidden] { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); display:grid; place-items:center; width:28px; height:28px; padding:0; border-radius:50%; background:rgba(0,0,0,.45); color:#fff; font-size:13px; line-height:1; }
+.section-card[data-role="videos"] video,.section-card[data-role="videos"] iframe { max-width:100%; }
+.footer-divider { max-width:560px; border:0; border-top:1px solid #d8dadd; margin:18px auto 16px; }
+footer { margin:0 auto 16px; text-align:center; }
+@media(max-width:440px) { .wrap { padding:12px 10px 22px; } .section-card { padding:19px 12px; } .section-card[data-role="digital"] .gallery-item,.section-card[data-role="photo-gallery"] .gallery-item { flex:0 1 200px; max-width:100%; } }
+@media(prefers-reduced-motion:reduce) { *,*::before,*::after { scroll-behavior:auto; transition:none; } }
 </style>
 </head><body><main class="wrap">
 <nav aria-label="Site navigation" class="nav-pills"><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/">Sketches &amp; Drawings</a><a class="nav-pill" href="../index.html">← Poo Fairy</a> <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/search/">Search Catalogue</a>
